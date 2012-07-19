@@ -1,0 +1,31 @@
+<h1>Listing prospectos</h1>
+
+<table>
+  <tr>
+    <th>Pros nombre</th>
+    <th>Pros email</th>
+    <th>Pros direccion</th>
+    <th>Pros tel casa</th>
+    <th>Pros tel celular</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @prospectos.each do |prospecto| %>
+  <tr>
+    <td><%= prospecto.pros_nombre %></td>
+    <td><%= prospecto.pros_email %></td>
+    <td><%= prospecto.pros_direccion %></td>
+    <td><%= prospecto.pros_tel_casa %></td>
+    <td><%= prospecto.pros_tel_celular %></td>
+    <td><%= link_to 'Show', prospecto %></td>
+    <td><%= link_to 'Edit', edit_prospecto_path(prospecto) %></td>
+    <td><%= link_to 'Destroy', prospecto, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Prospecto', new_prospecto_path %>

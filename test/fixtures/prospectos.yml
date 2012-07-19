@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pros_nombre: MyString
+  pros_email: MyString
+  pros_direccion: MyString
+  pros_tel_casa: MyString
+  pros_tel_celular: MyString
+
+two:
+  pros_nombre: MyString
+  pros_email: MyString
+  pros_direccion: MyString
+  pros_tel_casa: MyString
+  pros_tel_celular: MyString

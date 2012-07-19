@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pros nombre:</b>
+  <%= @prospecto.pros_nombre %>
+</p>
+
+<p>
+  <b>Pros email:</b>
+  <%= @prospecto.pros_email %>
+</p>
+
+<p>
+  <b>Pros direccion:</b>
+  <%= @prospecto.pros_direccion %>
+</p>
+
+<p>
+  <b>Pros tel casa:</b>
+  <%= @prospecto.pros_tel_casa %>
+</p>
+
+<p>
+  <b>Pros tel celular:</b>
+  <%= @prospecto.pros_tel_celular %>
+</p>
+
+
+<%= link_to 'Edit', edit_prospecto_path(@prospecto) %> |
+<%= link_to 'Back', prospectos_path %>

@@ -1,4 +1,6 @@
 ProyectoDewVeterinaria::Application.routes.draw do
+  resources :prospectos
+
   resources :clientes
 
   resources :doctors
