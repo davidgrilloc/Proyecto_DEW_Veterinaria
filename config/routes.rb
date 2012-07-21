@@ -1,4 +1,7 @@
 ProyectoDewVeterinaria::Application.routes.draw do
+  
+ root :to => "clientes#index"
+  
   resources :prospectos
 
   resources :clientes
